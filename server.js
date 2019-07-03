@@ -35,8 +35,16 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 
 // Connect to the Mongo DB
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://dongdong:mnizdd123@ds115931.mlab.com:15931/heroku_stmrw6fh";
-mongoose.connect(MONGODB_URI); 
+mongoose.Promise = global.Promise; 
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://dongdong:mnizdd123@ds115931.mlab.com:15931/heroku_stmrw6fh",
+  {
+    useMongoClient:true
+  }
+); 
+
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://dongdong:mnizdd123@ds115931.mlab.com:15931/heroku_stmrw6fh";
+// mongoose.connect(MONGODB_URI); 
 
 app.get('/', function (req, res) {
   res.render('home');
