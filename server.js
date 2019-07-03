@@ -43,7 +43,6 @@ mongoose.connect(
   }
 ); 
 
-// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://dongdong:mnizdd123@ds115931.mlab.com:15931/heroku_stmrw6fh";
 // mongoose.connect(MONGODB_URI); 
 
 app.get('/', function (req, res) {
