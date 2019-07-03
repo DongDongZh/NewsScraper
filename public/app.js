@@ -10,7 +10,7 @@ $.getJSON("/articles", function(data) {
 // "<a href = '"+ data[i].link + "'></a>"
 // "<a href = '" + data[i].link + "'>"+data[i].title+"</a>"
 // Whenever someone clicks a p tag
-$(document).on("click", "p", function() {
+$(document).on("click", 'p', function() {
   // Empty the notes from the note section
   $("#notes").empty();
   // Save the id from the p tag

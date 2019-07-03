@@ -53,7 +53,7 @@ function scrape(website) {
       result.summary = $(this)
         .children(".wsj-card-body")
         .children(".wsj-summary")
-        .find("span")
+        .find("span:first-child")
         .text();
     
       // Create a new Article using the `result` object built from scraping
