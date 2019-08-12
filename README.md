@@ -18,5 +18,5 @@ Users are able to leave comments on the articles displayed and revisit them late
 ## Deployed Site
 https://fathomless-plains-61846.herokuapp.com/
 
-
-
+## Contact Information 
+General Inquires at ddzhang2018@gmail.com.
